@@ -1368,9 +1368,9 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
-  padding: 0.65rem;
+  width: 48px;
+  height: 48px;
+  padding: 0.45rem;
   border-radius: 999px;
   border: 1px solid #111111;
   background: transparent;
@@ -1870,9 +1870,9 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
   }
 
   .footer-social {
-    width: 48px;
-    height: 48px;
-    padding: 0.5rem;
+    width: 42px;
+    height: 42px;
+    padding: 0.4rem;
     margin: 0;
   }
 

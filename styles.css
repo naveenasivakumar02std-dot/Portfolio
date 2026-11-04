@@ -7,6 +7,7 @@
   --line: rgba(17, 17, 17, 0.1);
   --panel: #f6f3ee;
   --shadow: 0 22px 60px rgba(17, 17, 17, 0.1);
+  --radius-surface: 18px;
   --font-sans: "Oswald", sans-serif;
 }
 
@@ -128,7 +129,7 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
   height: 42px;
   padding: 0;
   border: 1px solid rgba(17, 17, 17, 0.18);
-  border-radius: 10px;
+  border-radius: var(--radius-surface);
   background: #ffffff;
   color: #111111;
   align-items: center;
@@ -394,7 +395,7 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
   left: 50%;
   width: clamp(320px, 36vw, 700px);
   aspect-ratio: 16 / 9;
-  border-radius: 32px;
+  border-radius: var(--radius-surface);
   overflow: hidden;
   border: 1px solid rgba(17, 17, 17, 0.18);
   box-shadow: 0 16px 36px rgba(17, 17, 17, 0.24);
@@ -579,7 +580,7 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
 .work-gallery-item {
   display: block;
   margin: 0;
-  border-radius: 14px;
+  border-radius: var(--radius-surface);
   overflow: hidden;
   background: transparent;
 }
@@ -608,7 +609,7 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 14px;
+  border-radius: var(--radius-surface);
   background: transparent;
 }
 
@@ -650,6 +651,7 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
 .project-cover-placeholder {
   aspect-ratio: 16 / 9;
   overflow: hidden;
+  border-radius: var(--radius-surface);
   background: #efe9df;
 }
 
@@ -741,7 +743,7 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
   display: block;
   width: 100%;
   margin: 0;
-  border-radius: 14px;
+  border-radius: var(--radius-surface);
   overflow: hidden;
   background: transparent;
 }
@@ -774,12 +776,13 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
   width: 100%;
   display: block;
   background: transparent;
-  border-radius: 14px;
+  border-radius: var(--radius-surface);
 }
 
 .project-empty-state {
   padding: 2rem;
   border: 1px solid rgba(17, 17, 17, 0.12);
+  border-radius: var(--radius-surface);
   color: rgba(17, 17, 17, 0.78);
   line-height: 1.7;
   background: #faf8f4;
@@ -847,7 +850,7 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
   width: min(760px, 100%);
   padding: 3rem;
   border: 1px solid var(--line);
-  border-radius: 32px;
+  border-radius: var(--radius-surface);
   background: rgba(255, 255, 255, 0.8);
   box-shadow: var(--shadow);
 }
@@ -929,7 +932,7 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
 .feedback-field textarea {
   width: 100%;
   border: 1px solid rgba(17, 17, 17, 0.12);
-  border-radius: 22px;
+  border-radius: var(--radius-surface);
   background: #faf8f4;
   padding: 1rem 1.1rem;
   font: inherit;
@@ -1020,7 +1023,8 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center top;
-  background: #f2f0eb;
+  border: 1px solid #111111;
+  border-radius: var(--radius-surface);
 }
 
 .profile-right {
@@ -1085,23 +1089,20 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
 }
 
 .profile-skills-section {
-  margin-top: 1.35rem;
+  margin-top: 0.5rem;
 }
 
 .skills-panel {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border-radius: 34px;
+  border-radius: var(--radius-surface);
   width: min(980px, 100%);
   margin-inline: auto;
   padding: 1.5rem;
-  background:
-    radial-gradient(circle at 10% 20%, rgba(17, 17, 17, 0.05), transparent 46%),
-    radial-gradient(circle at 90% 0%, rgba(17, 17, 17, 0.04), transparent 34%),
-    #ffffff;
-  border: 1px solid rgba(17, 17, 17, 0.12);
-  box-shadow: 0 22px 54px rgba(17, 17, 17, 0.12);
+  background: transparent;
+  border: 1px solid #111111;
+  box-shadow: none;
   color: #111111;
 }
 
@@ -1482,7 +1483,6 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
   }
 
   .skills-panel {
-    border-radius: 28px;
     width: 100%;
     padding: 1.2rem;
   }
@@ -1608,7 +1608,7 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
     z-index: 30;
     min-width: 190px;
     padding: 0.5rem;
-    border-radius: 14px;
+    border-radius: var(--radius-surface);
     border: 1px solid rgba(17, 17, 17, 0.12);
     background: rgba(255, 255, 255, 0.98);
     box-shadow: 0 14px 30px rgba(17, 17, 17, 0.12);
@@ -1693,7 +1693,6 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
 
   .top-project-card {
     width: clamp(210px, 72vw, 340px);
-    border-radius: 24px;
   }
 
   .top-project-card-left {
@@ -1882,6 +1881,5 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
 
   .subpage-card {
     padding: 2rem 1.4rem;
-    border-radius: 24px;
   }
 }

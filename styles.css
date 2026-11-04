@@ -984,7 +984,7 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
 }
 
 .profile-main {
-  padding: 2rem 2rem 2.2rem;
+  padding: 1rem 2rem 1.2rem;
   scroll-margin-top: 5rem;
 }
 
@@ -993,7 +993,7 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
   grid-template-columns: minmax(320px, 0.95fr) minmax(360px, 1.05fr);
   gap: 3.35rem;
   align-items: center;
-  min-height: calc(100vh - 160px);
+  min-height: auto;
 }
 
 .profile-left {
@@ -1445,7 +1445,7 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
   }
 
   .profile-main {
-    padding: 1.4rem 1.2rem 2.2rem;
+    padding: 1rem 1.2rem 1.5rem;
   }
 
   .home-top-projects {
@@ -1688,7 +1688,7 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
   }
 
   .profile-main {
-    padding: 1rem 1rem 2rem;
+    padding: 0.7rem 1rem 1.3rem;
   }
 
   .home-top-projects {

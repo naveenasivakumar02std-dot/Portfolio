@@ -24,9 +24,8 @@ function markActiveNav() {
   navLinks.forEach((link) => {
     const href = link.getAttribute("href");
     const isActive =
-      (currentPage === "home" && href === "index.html") ||
+      (currentPage === "home" && href === "index.html#profile" && window.location.hash === "#profile") ||
       (currentPage === "work" && href === "work.html") ||
-      (currentPage === "profile" && href === "profile.html") ||
       (currentPage === "feedback" && href === "feedback.html");
 
     if (isActive) {

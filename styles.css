@@ -108,8 +108,12 @@ a {
 .site-nav a:focus-visible,
 body[data-page="home"] .site-nav a[href="index.html"],
 body[data-page="work"] .site-nav a[href="work.html"],
-body[data-page="profile"] .site-nav a[href="profile.html"],
 body[data-page="feedback"] .site-nav a[href="feedback.html"] {
+  background: rgba(17, 17, 17, 0.08);
+  color: #000000;
+}
+
+.site-nav a[aria-current="page"] {
   background: rgba(17, 17, 17, 0.08);
   color: #000000;
 }
@@ -983,6 +987,7 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
 
 .profile-main {
   padding: 2rem 2rem 2.2rem;
+  scroll-margin-top: 5rem;
 }
 
 .profile-hero {

@@ -1371,8 +1371,7 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
   width: 42px;
   height: 42px;
   padding: 0.4rem;
-  border-radius: 999px;
-  border: 1px solid #111111;
+  border: 0;
   background: transparent;
   color: #111111;
   transition: transform 180ms ease;
@@ -1382,7 +1381,7 @@ body[data-page="feedback"] .site-nav a[href="feedback.html"] {
 .footer-social:focus-visible,
 .footer-social:active {
   transform: translateY(-1px);
-  background: rgba(17, 17, 17, 0.08);
+  background: transparent;
 }
 
 .footer-social-icon {
